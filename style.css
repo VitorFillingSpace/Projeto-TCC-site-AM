@@ -54,6 +54,7 @@ header img {
 }
 #tabela-explore {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0% auto;
@@ -79,11 +80,30 @@ header img {
 #card-explore-rosa {
   background-color: #f06292;
 }
+
+.container-horario{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
 .horario-local {
+  width: 100%;
   display: flex;
   align-items: center;
   color: #f06292;
   font-weight: bolder;
+}
+
+.horario-local img {
+  height: 200px;
+}
+
+.horario-local p {
+  flex-grow: 1;
+  text-align: right;
 }
 
 #local-azul {
@@ -99,6 +119,13 @@ header img {
 
 /* customização menu */
 
+#container-cards-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  object-fit: contain;
+}
+
 .titulo {
   text-align: center;
   color: #77afef;
@@ -112,6 +139,7 @@ header img {
   flex-wrap: wrap; /*ele quebra a linha, quando não tem espaço suficiente*/
   justify-content: center; /* alinha os itens no eixo principal*/
   align-items: stretch; /*deixa os itens com a mesma altura, "esticado" como tamnho do container*/
+  height: fit-content;
   gap: 30px; /*espaçamento de um para o outro*/
   margin-bottom: 30vh;
 }
@@ -128,6 +156,12 @@ header img {
   transition: 0.3s;
   box-shadow: 0.3s;
   background-color: #ee82a2;
+}
+
+.container-botoes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .card-menu:hover {
@@ -168,11 +202,16 @@ header img {
   gap: 5px;
 }
 
-span {
+.botoes {
   display: flex; /* deixar os itens lado a lado*/
   justify-content: center;
+  flex-direction: row;
+
+  width: 45%;
+
+  gap: 15px;
+
   text-decoration: none; /*ele tirar a decoração do meu texto*/
-  margin: 15px;
   border-radius: 10px;
   background-color: #f6c3d2;
   padding: 5px;
@@ -193,6 +232,10 @@ span {
 
 #marmitas span {
   background-color: #bfd1ee;
+}
+
+#area-menu{
+  margin-bottom: 100px;
 }
 
 /* área de criação dos carrosséis de salgados-marmitas-caldos */
@@ -272,6 +315,9 @@ span {
 .card-container:hover .descricao {
   bottom: 0;
 }
+.carrossel-container:hover, #carrossel-container-azul:hover{
+  animation-play-state: paused;
+}
 @keyframes scrollInfinito {
   from {
     transform: translateX(0);
@@ -333,16 +379,15 @@ span {
 .card-montar {
   background-color: #92c5ff;
   padding: 20px;
-  background-color: #fafafa;
   border-color: #88bce0;
   border-radius: 15px;
-  color: #92c5ff;
-  border: 15px solid;
   display: flex;
   flex-direction: column;
   width: 350px;
   min-height: 320px;
   text-align: center;
+  align-items: center;
+  justify-content: space-around;
 }
 #monte-sua-marmita {
   margin: 20px;
@@ -353,14 +398,17 @@ span {
 .montar ul {
   background-color: #fafafa;
   list-style: none;
-  text-align: center;
+  padding: 5vh 15vh;
+  color: #92c5ff;
+  border-radius: 10px;
 }
-.card-montar input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid;
+.card-montar h3 {
+  background-color: #92c5ff;
+  color: #fff;
+  margin: 0%;
+  padding: 2vh;
   border-radius: 8px;
-  text-align: center;
+  width: fit-content;
 }
 
 /* área de alterações de combos de caldo - acompanhamento e extras */
@@ -423,6 +471,8 @@ span {
   justify-content: center;
   align-items: center;
   padding: 20px;
+
+  gap: 150px;
 }
 .pedido {
   display: flex;
@@ -478,7 +528,7 @@ span {
   outline: none;
 }
 
-.botoes {
+#botoes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;

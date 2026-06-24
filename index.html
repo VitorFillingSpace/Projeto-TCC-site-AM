@@ -113,7 +113,7 @@
                     <p>Entrega rápido ou retire o pedido</p>
                 </div>
             </div>
-            <div>
+            <div class="container-horario">
                 <div class="horario-local">
                     <img src="./imagens/calendario.png" alt="Horário de funcionamento">
                     <p>DIAS ÚTEIS DAS<br>8H ATÉ 18H</p>
@@ -130,536 +130,576 @@
 
     <section id="area-menu">
         <h2 class="titulo">MENU</h2>
-        <div class="menu">
-
+        <article id="container-cards-menu">
             <div class="card-menu">
                 <a href="#carrossel-salgados">
                     <img src="imagens/menu/salgados-menu.webp" alt="salgados">
                     <h3>SALGADOS</h3>
-                    <div class="span">
-                        <span>OPÇÕES</span>
-                        <span>COMBOS</span>
+                    <div class="container-botoes">
+                        <div class="botoes">OPÇÕES</div>
+                        <div class="botoes">COMBOS</div>
+                    </div>
                 </a>
             </div>
-        </div>
 
-        <div class="card-menu" id="marmitas">
-            <a href="#carrossel-marmitas">
-                <img src="imagens/menu/Marmita-menu.jpeg" alt="marmitas">
-                <h3>MARMITAS</h3>
-                <div class="span">
-                    <span>OPÇÕES</span>
-                    <span>COMBOS</span>
-            </a>
-        </div>
-        </div>
-        <div class="card-menu">
-            <a href="#carrossel-caldos">
-                <img src="imagens/menu/Caldo-menu.jpeg" alt="caldos">
-                <h3>CALDOS</h3>
-                <div class="span">
-                    <span>OPÇÕES</span>
-                    <span>COMBOS</span>
-            </a>
-        </div>
-        </div>
-        </div>
+            <div class="card-menu" id="marmitas">
+                <a href="#carrossel-marmitas">
+                    <img src="imagens/menu/Marmita-menu.jpeg" alt="marmitas">
+                    <h3>MARMITAS</h3>
+                    <div class="container-botoes">
+                        <div class="botoes">OPÇÕES</div>
+                        <div class="botoes">COMBOS</div>
+                    </div>
+                </a>
+            </div>
 
-        <!--Carrossel de salgados-->
-        <div id="carrossel-salgados">
-            <div class="carrossel-wrapper">
-                <h2>SALGADOS</h2>
-                <div class="carrossel-container">
-                    <div class="card-container">
-                        <img src="./imagens/carrossel salgados/coxinha.png" alt="Coxinha">
-                        <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>COXINHA</h4>
-                            <p>Massa à base de caldo de frango e batata, recheada com peito de frango desfiado e
-                                casquinha
-                                crocante.</p>
-                        </div>
+            <div class="card-menu">
+                <a href="#carrossel-caldos">
+                    <img src="imagens/menu/Caldo-menu.jpeg" alt="caldos">
+                    <h3>CALDOS</h3>
+                    <div class="container-botoes">
+                        <div class="botoes">OPÇÕES</div>
+                        <div class="botoes">COMBOS</div>
                     </div>
-                    <div class="card-container">
-                        <img src="imagens/carrossel salgados/bolinho de carne.jpg" alt="Bolinho de carne">
-                        <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>BOLINHO DE CARNE</h4>
-                            <p>Carne moída selecionada, bem temperada, frito com casca dourada e interior macio.</p>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <img src="imagens/carrossel salgados/bolinho de queijo.png" alt="Bolinho de queijo">
-                        <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>BOLINHO DE QUEIJO</h4>
-                            <p>Massa crocante com mussarela derretida e cremosa que estica a cada mordida.</p>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <img src="imagens/carrossel salgados/risole de presunto e queijo.webp" alt="Risole">
-                        <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>RISOLE</h4>
-                            <p>Massa leve e crocante recheada com presunto e queijo derretidos.</p>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <img src="imagens/carrossel salgados/KIBE.jpg" alt="Kibe">
-                        <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>QUIBE/KIBE</h4>
-                            <p>Bolinho de origem árabe com carne bovina, trigo, hortelã e especiarias.</p>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <img src="imagens/carrossel salgados/CROQUETE.jpg" alt="Croquete">
-                        <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>CROQUETE</h4>
-                            <p>Recheio denso de carne desfiada com tempero tentador.</p>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <img src="imagens/carrossel salgados/rolinho de salsicha.png" alt="Rolinho de salsicha">
-                        <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>ROLINHO DE SALSICHA</h4>
-                            <p>Envolto em uma massa deliciosa e crocante.</p>
-                        </div>
-                    </div>
+                </a>
+            </div>
+        </article>
+    </section>
 
-                    <!-- area clonada pra passar um efeito de carrossel infinito. os elementos clonados possuem aria-hidden=true -->
+    <!--Carrossel de salgados-->
+    <div id="carrossel-salgados">
+        <div class="carrossel-wrapper">
+            <h2>SALGADOS</h2>
+            <div class="carrossel-container">
+                <div class="card-container">
+                    <img src="./imagens/carrossel salgados/coxinha.png" alt="Coxinha">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>COXINHA</h4>
+                        <p>Massa à base de caldo de frango e batata, recheada com peito de frango desfiado e
+                            casquinha
+                            crocante.</p>
+                        <span class="preco">R$4,50</span>
 
-                    <div aria-hidden="true" class="card-container">
-                        <img src="./imagens/carrossel salgados/coxinha.png" alt="">
-                        <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>COXINHA</h4>
-                            <p>Massa à base de caldo de frango e batata, recheada com peito de frango desfiado e
-                                casquinha
-                                crocante.</p>
-                        </div>
                     </div>
-                    <div aria-hidden="true" class="card-container">
-                        <img src="imagens/carrossel salgados/bolinho de carne.jpg" alt="">
+                </div>
+                <div class="card-container">
+                    <img src="imagens/carrossel salgados/bolinho de carne.jpg" alt="Bolinho de carne">
+                    <span class="preco">R$4,50</span>
+
+                    <div class="descricao">
+                        <h4>BOLINHO DE CARNE</h4>
+                        <p>Carne moída selecionada, bem temperada, frito com casca dourada e interior macio.</p>
                         <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>BOLINHO DE CARNE</h4>
-                            <p>Carne moída selecionada, frito com casca dourada e interior macio.</p>
-                        </div>
                     </div>
-                    <div aria-hidden="true" class="card-container">
-                        <img src="imagens/carrossel salgados/bolinho de queijo.png" alt="">
+                </div>
+                <div class="card-container">
+                    <img src="imagens/carrossel salgados/bolinho de queijo.png" alt="Bolinho de queijo">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>BOLINHO DE QUEIJO</h4>
+                        <p>Massa crocante com mussarela derretida e cremosa que estica a cada mordida.</p>
                         <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>BOLINHO DE QUEIJO</h4>
-                            <p>Mussarela derretida e cremosa.</p>
-                        </div>
+
                     </div>
-                    <div aria-hidden="true" class="card-container">
-                        <img src="imagens/carrossel salgados/risole de presunto e queijo.webp" alt="">
+                </div>
+                <div class="card-container">
+                    <img src="imagens/carrossel salgados/risole de presunto e queijo.webp" alt="Risole">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>RISOLE</h4>
+                        <p>Massa leve e crocante recheada com presunto e queijo derretidos.</p>
                         <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>RISOLE</h4>
-                            <p>Presunto e queijo derretidos.</p>
-                        </div>
+
                     </div>
-                    <div aria-hidden="true" class="card-container">
-                        <img src="imagens/carrossel salgados/KIBE.jpg" alt="">
+                </div>
+                <div class="card-container">
+                    <img src="imagens/carrossel salgados/KIBE.jpg" alt="Kibe">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>QUIBE/KIBE</h4>
+                        <p>Bolinho de origem árabe com carne bovina, trigo, hortelã e especiarias.</p>
                         <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>QUIBE/KIBE</h4>
-                            <p>Carne bovina, trigo e especiarias.</p>
-                        </div>
+
                     </div>
-                    <div aria-hidden="true" class="card-container">
-                        <img src="imagens/carrossel salgados/CROQUETE.jpg" alt="">
+                </div>
+                <div class="card-container">
+                    <img src="imagens/carrossel salgados/CROQUETE.jpg" alt="Croquete">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>CROQUETE</h4>
+                        <p>Recheio denso de carne desfiada com tempero tentador.</p>
                         <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>CROQUETE</h4>
-                            <p>Recheio denso de carne desfiada.</p>
-                        </div>
+
                     </div>
-                    <div aria-hidden="true" class="card-container">
-                        <img src="imagens/carrossel salgados/rolinho de salsicha.png" alt="">
+                </div>
+                <div class="card-container">
+                    <img src="imagens/carrossel salgados/rolinho de salsicha.png" alt="Rolinho de salsicha">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>ROLINHO DE SALSICHA</h4>
+                        <p>Envolto em uma massa deliciosa e crocante.</p>
                         <span class="preco">R$4,50</span>
-                        <div class="descricao">
-                            <h4>ROLINHO DE SALSICHA</h4>
-                            <p>Massa deliciosa e crocante.</p>
-                        </div>
+
+                    </div>
+                </div>
+
+                <!-- area clonada pra passar um efeito de carrossel infinito. os elementos clonados possuem aria-hidden=true -->
+
+                <div aria-hidden="true" class="card-container">
+                    <img src="./imagens/carrossel salgados/coxinha.png" alt="">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>COXINHA</h4>
+                        <p>Massa à base de caldo de frango e batata, recheada com peito de frango desfiado e
+                            casquinha
+                            crocante.</p>
+                        <span class="preco">R$4,50</span>
+
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container">
+                    <img src="imagens/carrossel salgados/bolinho de carne.jpg" alt="">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>BOLINHO DE CARNE</h4>
+                        <p>Carne moída selecionada, frito com casca dourada e interior macio.</p> <span
+                            class="preco">R$4,50</span>
+
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container">
+                    <img src="imagens/carrossel salgados/bolinho de queijo.png" alt="">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>BOLINHO DE QUEIJO</h4>
+                        <p>Mussarela derretida e cremosa.</p>
+                        <span class="preco">R$4,50</span>
+
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container">
+                    <img src="imagens/carrossel salgados/risole de presunto e queijo.webp" alt="">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>RISOLE</h4>
+                        <p>Presunto e queijo derretidos.</p>
+                        <span class="preco">R$4,50</span>
+
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container">
+                    <img src="imagens/carrossel salgados/KIBE.jpg" alt="">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>QUIBE/KIBE</h4>
+                        <p>Carne bovina, trigo e especiarias.</p>
+                        <span class="preco">R$4,50</span>
+
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container">
+                    <img src="imagens/carrossel salgados/CROQUETE.jpg" alt="">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>CROQUETE</h4>
+                        <p>Recheio denso de carne desfiada.</p>
+                        <span class="preco">R$4,50</span>
+
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container">
+                    <img src="imagens/carrossel salgados/rolinho de salsicha.png" alt="">
+                    <span class="preco">R$4,50</span>
+                    <div class="descricao">
+                        <h4>ROLINHO DE SALSICHA</h4>
+                        <p>Massa deliciosa e crocante.</p>
+                        <span class="preco">R$4,50</span>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--Combo de salgado-->
-        <div class="combos-salgados">
+    <!--Combo de salgado-->
+    <div class="combos-salgados">
 
-            <div class="combo-card">
-                <div class="card-combo-intro">
-                    <h2>COMBO #1</h2>
-                    <p>Cento de mini salgados</p>
+        <div class="combo-card">
+            <div class="card-combo-intro">
+                <h2>COMBO #1</h2>
+                <p>Cento de mini salgados</p>
+            </div>
+            <div class="descricao-combo">
+                <h4>R$65,00</h4>
+                <p>Cem salgados pequenos para festas ou eventos (tipo único)</p>
+            </div>
+        </div>
+
+        <div class="combo-card">
+            <div class="card-combo-intro">
+                <h2>COMBO #2</h2>
+                <p>Cento de salgados grandes</p>
+            </div>
+            <div class="descricao-combo">
+                <h4>R$100,00</h4>
+                <p>Cem salgados grandes para festas ou eventos (tipo único)</p>
+            </div>
+        </div>
+
+
+        <div class="combo-card">
+            <div class="card-combo-intro">
+                <h2>COMBO #3</h2>
+                <p>À moda do cliente</p>
+            </div>
+            <div class="descricao-combo">
+                <h4>CONSULTAR</h4>
+                <p>Escolha os tipos e quantidades — fazemos do seu jeito!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- carrinho estratégico que serve como um atalho para a área de contato -->
+
+    <a href="#body-calculadora">
+        <img class="carrinho" src="./imagens/Carrinho rosa.png" alt="Fazer pedido">
+    </a>
+
+    <!--Carrossel azul😒-->
+    <div id="carrossel-marmitas">
+        <div class="carrossel-wrapper-azul">
+            <h2>MARMITAS</h2>
+            <div id="carrossel-container-azul">
+                <div class="card-container">
+                    <img src="./imagens/carrossel marmitas/feijoada-menu.jpg" alt="Feijoada">
+                    <span class="preco">R$27.00</span>
+                    <div class="descricao">
+                        <h4>FEIJOADA</h4>
+                        <p>Feijão preto com carnes selecionadas e tempero caseiro.</p>
+                        <span class="preco">R$27.00</span>
+
+                    </div>
                 </div>
-                <div class="descricao-combo">
-                    <h4>R$65,00</h4>
-                    <p>Cem salgados pequenos para festas ou eventos (tipo único)</p>
+                <div class="card-container">
+                    <img src="imagens/carrossel marmitas/picadinho de carne com batata.jpeg" alt="Picadinho">
+                    <span class="preco">R$25.00</span>
+                    <div class="descricao">
+                        <h4>PICADINHO</h4>
+                        <p>Carne com batata, temperado na medida certa.</p>
+                        <span class="preco">R$25.00</span>
+
+                    </div>
+                </div>
+                <div class="card-container"><img src="./imagens/carrossel marmitas/galinhada.jpg" alt="Marmita"><span
+                        class="preco">R$25.00</span>
+                    <div class="descricao">
+                        <h4>GALINHADA</h4>
+                        <p>Galinha cozida com especiarias de dar água na boca.</p>
+                        <span class="preco">R$25.00</span>
+
+                    </div>
+                </div>
+                <div class="card-container"><img src="imagens/carrossel marmitas/sarapatel.jpg" alt="Marmita">
+                    <span class="preco">R$20.00</span>
+                    <div class="descricao">
+                        <h4>SARAPATEL</h4>
+                        <p>Refeição tradicional nordestina, feito com miúdos selecionados.</p>
+                        <span class="preco">R$20.00</span>
+
+                    </div>
+                </div>
+                <div class="card-container">
+                    <img src="imagens/carrossel marmitas/baião de dois.jpg" alt="Baião de dois">
+                    <span class="preco">R$25.00</span>
+                    <div class="descricao">
+                        <h4>BAIÃO DE DOIS</h4>
+                        <p>Prato típico, composto por arroz, feijão-de-corda, carne de sol, queijo bacon e</p>
+                        <span class="preco">R$25.00</span>
+
+                    </div>
+                </div>
+
+                <!-- area clonada possuindo aria-hidden=true -->
+
+                <div aria-hidden="true" class="card-container">
+                    <img src="./imagens/carrossel marmitas/feijoada-menu.jpg" alt="">
+                    <span class="preco">R$27.00</span>
+                    <div class="descricao">
+                        <h4>FEIJOADA</h4>
+                        <p>Feijão preto com carnes selecionadas e tempero caseiro.</p>
+                        <span class="preco">R$27.00</span>
+
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container">
+                    <img src="imagens/carrossel marmitas/picadinho de carne com batata.jpeg" alt="">
+                    <span class="preco">R$25.00</span>
+                    <div class="descricao">
+                        <h4>PICADINHO</h4>
+                        <p>Carne com batata, temperado na medida certa.</p>
+                        <span class="preco">R$25.00</span>
+
+                        </p>
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container"><img src="./imagens/carrossel marmitas/galinhada.jpg"
+                        alt=""><span class="preco">R$25.00</span>
+                    <div class="descricao">
+                        <h4>GALINHADA</h4>
+                        <p>Galinha cozida com especiarias de dar água na boca.</p>
+                        <span class="preco">R$25.00</span>
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container"><img src="imagens/carrossel marmitas/sarapatel.jpg"
+                        alt=""><span class="preco">R$20.00</span>
+                    <div class="descricao">
+                        <h4>SARAPATEL</h4>
+                        <p>Refeição tradicional nordestina, feito com miúdos selecionados.</p>
+                        <span class="preco">R$20.00</span>
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container">
+                    <img src="imagens/carrossel marmitas/baião de dois.jpg" alt="Baião de dois">
+                    <span class="preco">R$25.00</span>
+                    <div class="descricao">
+                        <h4>BAIÃO DE DOIS</h4>
+                        <p>Prato típico, composto por arroz, feijão-de-corda, carne de sol, queijo bacon e linguiça
+                        </p>
+                        <span class="preco">R$25.00</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--área de monte a sua marmita, possuindo opções fixas e opcionais-->
+
+    <article id="secao-marmitas">
+        <h2 id="monte-sua-marmita">MONTE SUA MARMITA</h2>
+        <div class="montar">
+            <div>
+                <div class="card-montar">
+                    <h3>ACOMPANHAMENTOS FIXOS</h3>
+                    <ul>
+                        <li>ARROZ</li>
+                        <li>FEIJÃO</li>
+                        <li>BATATA FRITA</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="combo-card">
-                <div class="card-combo-intro">
-                    <h2>COMBO #2</h2>
-                    <p>Cento de salgados grandes</p>
-                </div>
-                <div class="descricao-combo">
-                    <h4>R$100,00</h4>
-                    <p>Cem salgados grandes para festas ou eventos (tipo único)</p>
+            <div>
+                <div class="card-montar">
+                    <h3>ACOMPANHAMENTOS ADICIONAIS</h3>
+                    <ul>
+                        <li>SALADA</li>
+                        <li>LEGUMES</li>
+                        <li>FARINHA</li>
+                        <li>MACARRÃO</li>
+                    </ul>
                 </div>
             </div>
 
-
-            <div class="combo-card">
-                <div class="card-combo-intro">
-                    <h2>COMBO #3</h2>
-                    <p>À moda do cliente</p>
-                </div>
-                <div class="descricao-combo">
-                    <h4>CONSULTAR</h4>
-                    <p>Escolha os tipos e quantidades — fazemos do seu jeito!</p>
+            <div>
+                <div class="card-montar">
+                    <div>
+                        <h3>MISTURA</h3>
+                        <ul>
+                            <li>FRANGO</li>
+                            <li>BISTECA</li>
+                            <li>LASANHA</li>
+                            <li>NHOQUE</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
         </div>
 
         <!-- carrinho estratégico que serve como um atalho para a área de contato -->
 
+
         <a href="#body-calculadora">
-            <img class="carrinho" src="./imagens/Carrinho rosa.png" alt="Fazer pedido">
+            <img class="carrinho" src="./imagens/Carrinho azul.png" alt="Fazer pedido">
         </a>
+    </article>
+    <!--Carrossel dos caldos-->
+    <div id="carrossel-caldos">
+        <div class="carrossel-wrapper">
+            <h2>CALDOS</h2>
+            <div class="carrossel-container">
+                <div class="card-container"><img src="imagens/carrossel caldos/caldo de mocoto.jpeg"
+                        alt="Caldo de mocotó"><span class="preco">R$18.00</span>
+                    <div class="descricao">
+                        <h4>CALDO DE MOCOTÓ</h4>
+                        <p>Caldo rico e encorpado, perfeito para dias frios.</p>
+                    </div>
+                </div>
+                <div class="card-container"><img src="./imagens/carrossel caldos/caldo verde-menu.webp"
+                        alt="Caldo verde"><span class="preco">R$13.00</span>
+                    <div class="descricao">
+                        <h4>CALDO VERDE</h4>
+                        <p>Caldo cremoso com couve e linguiça.</p>
+                    </div>
+                </div>
+                <div class="card-container"><img src="imagens/carrossel caldos/caldo de kenga.jpg" alt="Caldo"><span
+                        class="preco">R$15.00</span>
+                    <div class="descricao">
+                        <h4>CALDO DE KENGA</h4>
+                        <p>Caldos regional feito com mandioca cozida e frango desfiado.</p>
+                    </div>
+                </div>
+                <div class="card-container"><img src="imagens/carrossel caldos/caldo de vatapá.jpg" alt="Caldo">
+                    <span class="preco">R$15.00</span>
+                    <div class="descricao">
+                        <h4>CALDO DE VATAPÁ</h4>
+                        <p>Denso, apimentado e aromático. Feito com frango muito bem temperado, pão
+                            francês, azeite de dendê
+                            e leite de coco.</p>
+                    </div>
+                </div>
 
-        <!--Carrossel azul😒-->
-        <div id="carrossel-marmitas">
-            <div class="carrossel-wrapper-azul">
-                <h2>MARMITAS</h2>
-                <div id="carrossel-container-azul">
-                    <div class="card-container">
-                        <img src="./imagens/carrossel marmitas/feijoada-menu.jpg" alt="Feijoada">
-                        <span class="preco">R$27.00</span>
-                        <div class="descricao">
-                            <h4>FEIJOADA</h4>
-                            <p>Feijão preto com carnes selecionadas e tempero caseiro.</p>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <img src="imagens/carrossel marmitas/picadinho de carne com batata.jpeg" alt="Picadinho">
-                        <span class="preco">R$25.00</span>
-                        <div class="descricao">
-                            <h4>PICADINHO</h4>
-                            <p>Carne com batata, temperado na medida certa.</p>
-                        </div>
-                    </div>
-                    <div class="card-container"><img src="./imagens/carrossel marmitas/galinhada.jpg"
-                            alt="Marmita"><span class="preco">R$25.00</span>
-                        <div class="descricao">
-                            <h4>GALINHADA</h4>
-                            <p>Galinha cozida com especiarias de dar água na boca.</p>
-                        </div>
-                    </div>
-                    <div class="card-container"><img src="imagens/carrossel marmitas/sarapatel.jpg" alt="Marmita">
-                        <span class="preco">R$20.00</span>
-                        <div class="descricao">
-                            <h4>SARAPATEL</h4>
-                            <p>Refeição tradicional nordestina, feito com miúdos selecionados.</p>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <img src="imagens/carrossel marmitas/baião de dois.jpg" alt="Baião de dois">
-                        <span class="preco">R$25.00</span>
-                        <div class="descricao">
-                            <h4>BAIÃO DE DOIS</h4>
-                            <p>Prato típico, composto por arroz, feijão-de-corda, carne de sol, queijo bacon e</p>
-                        </div>
-                    </div>
+                <!-- carrossel clonado com aria-hidden=true -->
 
-                    <!-- area clonada possuindo aria-hidden=true -->
+                <div aria-hidden="true" class="card-container"><img src="imagens/carrossel caldos/caldo de mocoto.jpeg"
+                        alt=""><span class="preco">R$18.00</span>
+                    <div class="descricao">
+                        <h4>CALDO DE MOCOTÓ</h4>
+                        <p>Rico e encorpado perfeito para dias densos.</p>
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container"><img
+                        src="./imagens/carrossel caldos/caldo verde-menu.webp" alt=""><span class="preco">R$13.00</span>
+                    <div class="descricao">
+                        <h4>CALDO VERDE</h4>
+                        <p>Caldo cremoso com couve e linguiça.</p>
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container"><img src="imagens/carrossel caldos/caldo de kenga.jpg"
+                        alt=""><span class="preco">R$15.00</span>
+                    <div class="descricao">
+                        <h4>CALDO DE KENGA</h4>
+                        <p>Caldos regional feito com mandioca cozida e frango desfiado.</p>
+                    </div>
+                </div>
+                <div aria-hidden="true" class="card-container"><img src="imagens/carrossel caldos/caldo de vatapá.jpg"
+                        alt=""><span class="preco">R$15.00</span>
+                    <div class="descricao">
+                        <h4>CALDO DE VATAPÁ</h4>
+                        <p>Denso, apimentado e aromático. Feito com franfo muito bem temperado, pão
+                            frânces, azeite de dendê
+                            e leite de coco.</p>
+                    </div>
+                </div>
 
-                    <div aria-hidden="true" class="card-container">
-                        <img src="./imagens/carrossel marmitas/feijoada-menu.jpg" alt="">
-                        <span class="preco">R$27.00</span>
-                        <div class="descricao">
-                            <h4>FEIJOADA</h4>
-                            <p>Feijão preto com carnes selecionadas e tempero caseiro.</p>
-                        </div>
+                <!-- carrossel clonado com aria-hidden=true (são pocas opções e precisavam de mais um pra não ficar um espaço muito grande de vão no final) -->
+
+
+                <div aria-hidden="true" class="card-container"><img src="imagens/carrossel caldos/caldo de mocoto.jpeg"
+                        alt=""><span class="preco">R$18.00</span>
+                    <div class="descricao">
+                        <h4>CALDO DE MOCOTÓ</h4>
+                        <p>Rico e encorpado perfeito para dias densos.</p>
                     </div>
-                    <div aria-hidden="true" class="card-container">
-                        <img src="imagens/carrossel marmitas/picadinho de carne com batata.jpeg" alt=""><span
-                            class="preco">R$25.00</span>
-                        <div class="descricao">
-                            <h4>PICADINHO</h4>
-                            <p>Carne com batata, temperado na medida certa.</p>
-                            </p>
-                        </div>
+                </div>
+                <div aria-hidden="true" class="card-container"><img
+                        src="./imagens/carrossel caldos/caldo verde-menu.webp" alt=""><span class="preco">R$13.00</span>
+                    <div class="descricao">
+                        <h4>CALDO VERDE</h4>
+                        <p>Caldo cremoso com couve e linguiça.</p>
                     </div>
-                    <div aria-hidden="true" class="card-container"><img src="./imagens/carrossel marmitas/galinhada.jpg"
-                            alt=""><span class="preco">R$25.00</span>
-                        <div class="descricao">
-                            <h4>GALINHADA</h4>
-                            <p>Galinha cozida com especiarias de dar água na boca.</p>
-                        </div>
+                </div>
+                <div aria-hidden="true" class="card-container"><img src="imagens/carrossel caldos/caldo de kenga.jpg"
+                        alt=""><span class="preco">R$15.00</span>
+                    <div class="descricao">
+                        <h4>CALDO DE KENGA</h4>
+                        <p>Caldos regional feito com mandioca cozida e frango desfiado.</p>
                     </div>
-                    <div aria-hidden="true" class="card-container"><img src="imagens/carrossel marmitas/sarapatel.jpg"
-                            alt=""><span class="preco">R$20.00</span>
-                        <div class="descricao">
-                            <h4>SARAPATEL</h4>
-                            <p>Refeição tradicional nordestina, feito com miúdos selecionados.</p>
-                        </div>
-                    </div>
-                    <div aria-hidden="true" class="card-container">
-                        <img src="imagens/carrossel marmitas/baião de dois.jpg" alt="Baião de dois">
-                        <span class="preco">R$25.00</span>
-                        <div class="descricao">
-                            <h4>BAIÃO DE DOIS</h4>
-                            <p>Prato típico, composto por arroz, feijão-de-corda, carne de sol, queijo bacon e linguiça
-                            </p>
-                        </div>
+                </div>
+                <div aria-hidden="true" class="card-container"><img src="imagens/carrossel caldos/caldo de vatapá.jpg"
+                        alt=""><span class="preco">R$15.00</span>
+                    <div class="descricao">
+                        <h4>CALDO DE VATAPÁ</h4>
+                        <p>Denso, apimentado e aromático. Feito com franfo muito bem temperado, pão
+                            frânces, azeite de dendê
+                            e leite de coco.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--área de monte a sua marmita, possuindo opções fixas e opcionais-->
-
-        <article id="secao-marmitas">
-            <h2 id="monte-sua-marmita">MONTE SUA MARMITA</h2>
-            <div class="montar">
-                <div>
-                    <div class="card-montar">
-                        <h3>ACOMPANHAMENTOS FIXOS</h3>
-                        <ul>
-                            <li>ARROZ</li>
-                            <li>FEIJÃO</li>
-                            <li>BATATA FRITA</li>
-                        </ul>
-                        <input type="text" placeholder="DIGITE SUA ESCOLHA">
-                    </div>
-                </div>
-
-                <div>
-                    <div class="card-montar">
-                        <h3>ACOMPANHAMENTOS ADICIONAIS</h3>
-                        <ul>
-                            <li>SALADA</li>
-                            <li>LEGUMES</li>
-                            <li>FARINHA</li>
-                            <li>MACARRÃO</li>
-                        </ul>
-                        <input type="text" placeholder="DIGITE SUA ESCOLHA">
-                    </div>
-                </div>
-
-                <div>
-                    <div class="card-montar">
-                        <div>
-                            <h3>MISTURA</h3>
-                            <ul>
-                                <li>FRANGO</li>
-                                <li>BISTECA</li>
-                                <li>LASANHA</li>
-                                <li>NHOQUE</li>
-                            </ul>
-                            <input type="text" placeholder="DIGITE SUA ESCOLHA">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- carrinho estratégico que serve como um atalho para a área de contato -->
-
-
-            <a href="#body-calculadora">
-                <img class="carrinho" src="./imagens/Carrinho azul.png" alt="Fazer pedido">
-            </a>
-        </article>
-        <!--Carrossel dos caldos-->
-        <div id="carrossel-caldos">
-            <div class="carrossel-wrapper">
-                <h2>CALDOS</h2>
-                <div class="carrossel-container">
-                    <div class="card-container"><img src="imagens/carrossel caldos/caldo de mocoto.jpeg"
-                            alt="Caldo de mocotó"><span class="preco">R$18.00</span>
-                        <div class="descricao">
-                            <h4>CALDO DE MOCOTÓ</h4>
-                            <p>Caldo rico e encorpado, perfeito para dias frios.</p>
-                        </div>
-                    </div>
-                    <div class="card-container"><img src="./imagens/carrossel caldos/caldo verde-menu.webp"
-                            alt="Caldo verde"><span class="preco">R$13.00</span>
-                        <div class="descricao">
-                            <h4>CALDO VERDE</h4>
-                            <p>Caldo cremoso com couve e linguiça.</p>
-                        </div>
-                    </div>
-                    <div class="card-container"><img src="imagens/carrossel caldos/caldo de kenga.jpg" alt="Caldo"><span
-                            class="preco">R$15.00</span>
-                        <div class="descricao">
-                            <h4>CALDO DE KENGA</h4>
-                            <p>Caldos regional feito com mandioca cozida e frango desfiado.</p>
-                        </div>
-                    </div>
-                    <div class="card-container"><img src="imagens/carrossel caldos/caldo de vatapá.jpg" alt="Caldo">
-                        <span class="preco">R$15.00</span>
-                        <div class="descricao">
-                            <h4>CALDO DE VATAPÁ</h4>
-                            <p>Denso, apimentado e aromático. Feito com frango muito bem temperado, pão
-                                francês, azeite de dendê
-                                e leite de coco.</p>
-                        </div>
-                    </div>
-
-                    <!-- carrossel clonado com aria-hidden=true -->
-
-                    <div aria-hidden="true" class="card-container"><img
-                            src="imagens/carrossel caldos/caldo de mocoto.jpeg" alt=""><span
-                            class="preco">R$18.00</span>
-                        <div class="descricao">
-                            <h4>CALDO DE MOCOTÓ</h4>
-                            <p>Rico e encorpado perfeito para dias densos.</p>
-                        </div>
-                    </div>
-                    <div aria-hidden="true" class="card-container"><img
-                            src="./imagens/carrossel caldos/caldo verde-menu.webp" alt=""><span
-                            class="preco">R$13.00</span>
-                        <div class="descricao">
-                            <h4>CALDO VERDE</h4>
-                            <p>Caldo cremoso com couve e linguiça.</p>
-                        </div>
-                    </div>
-                    <div aria-hidden="true" class="card-container"><img
-                            src="imagens/carrossel caldos/caldo de kenga.jpg" alt=""><span class="preco">R$15.00</span>
-                        <div class="descricao">
-                            <h4>CALDO DE KENGA</h4>
-                            <p>Caldos regional feito com mandioca cozida e frango desfiado.</p>
-                        </div>
-                    </div>
-                    <div aria-hidden="true" class="card-container"><img
-                            src="imagens/carrossel caldos/caldo de vatapá.jpg" alt=""><span class="preco">R$15.00</span>
-                        <div class="descricao">
-                            <h4>CALDO DE VATAPÁ</h4>
-                            <p>Denso, apimentado e aromático. Feito com franfo muito bem temperado, pão
-                                frânces, azeite de dendê
-                                e leite de coco.</p>
-                        </div>
-                    </div>
-
-                    <!-- carrossel clonado com aria-hidden=true (são pocas opções e precisavam de mais um pra não ficar um espaço muito grande de vão no final) -->
-
-
-                    <div aria-hidden="true" class="card-container"><img
-                            src="imagens/carrossel caldos/caldo de mocoto.jpeg" alt=""><span
-                            class="preco">R$18.00</span>
-                        <div class="descricao">
-                            <h4>CALDO DE MOCOTÓ</h4>
-                            <p>Rico e encorpado perfeito para dias densos.</p>
-                        </div>
-                    </div>
-                    <div aria-hidden="true" class="card-container"><img
-                            src="./imagens/carrossel caldos/caldo verde-menu.webp" alt=""><span
-                            class="preco">R$13.00</span>
-                        <div class="descricao">
-                            <h4>CALDO VERDE</h4>
-                            <p>Caldo cremoso com couve e linguiça.</p>
-                        </div>
-                    </div>
-                    <div aria-hidden="true" class="card-container"><img
-                            src="imagens/carrossel caldos/caldo de kenga.jpg" alt=""><span class="preco">R$15.00</span>
-                        <div class="descricao">
-                            <h4>CALDO DE KENGA</h4>
-                            <p>Caldos regional feito com mandioca cozida e frango desfiado.</p>
-                        </div>
-                    </div>
-                    <div aria-hidden="true" class="card-container"><img
-                            src="imagens/carrossel caldos/caldo de vatapá.jpg" alt=""><span class="preco">R$15.00</span>
-                        <div class="descricao">
-                            <h4>CALDO DE VATAPÁ</h4>
-                            <p>Denso, apimentado e aromático. Feito com franfo muito bem temperado, pão
-                                frânces, azeite de dendê
-                                e leite de coco.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!--Combos de caldo-->
+    <div class="combos-caldo">
+        <div class="combo-card-caldo">
+            <h2>ACOMPANHAMENTOS</h2>
+            <p>3 OVOS DE CODORNA <br> 1 UNIDADE DE PÃO</p>
         </div>
 
-        <!--Combos de caldo-->
-        <div class="combos-caldo">
-            <div class="combo-card-caldo">
-                <h2>ACOMPANHAMENTOS</h2>
-                <p>3 OVOS DE CODORNA <br> 1 UNIDADE DE PÃO</p>
+        <!-- carrinho estratégico que serve como um atalho para a área de contato -->
+
+
+        <a href="#body-calculadora">
+            <img class="carrinho" src="imagens/Carrinho rosa.png" alt="" id="ultimo-carrinho">
+        </a>
+        <div class="combo-card-caldo">
+            <h2>EXTRAS | ADICIONAR</h2>
+            <p>TORRESMO R$1.00 10G <br> OVO DE GALINHA R$1.50 UNID</p>
+        </div>
+    </div>
+    <div id="body-calculadora">
+        <div class="pedido">
+
+            <!-- área de pedido -->
+
+            <div class="texto">
+                <h1>FAÇA SEU<br>PEDIDO!</h1>
+
+                <p>
+                    Caso queira saber o breve valor,<br>
+                    utilize a calculadora.
+                </p>
+
+                <!-- link direto para uma mensagem no whatsapp, possuindo um modelo de mensagem onde espaços vazios serão preenchidos pelo cliente -->
+
+                <a href="https://wa.link/kwxkte" target="_blank" class="botao">Abrir WhatsApp</a>
             </div>
 
-            <!-- carrinho estratégico que serve como um atalho para a área de contato -->
+        </div>
 
+        <!-- calculadora funcional -->
 
-            <a href="#body-calculadora">
-                <img class="carrinho" src="imagens/Carrinho rosa.png" alt="" id="ultimo-carrinho">
-            </a>
-            <div class="combo-card-caldo">
-                <h2>EXTRAS | ADICIONAR</h2>
-                <p>TORRESMO R$1.00 10G <br> OVO DE GALINHA R$1.50 UNID</p>
+        <div class="calculadora">
+            <input type="text" id="display" readonly>
+
+            <div id="botoes">
+                <button class="numero" onclick="adicionar('7')">7</button>
+                <button class="numero" onclick="adicionar('8')">8</button>
+                <button class="numero" onclick="adicionar('9')">9</button>
+                <button class="operador" onclick="adicionar('/')">÷</button>
+
+                <button class="numero" onclick="adicionar('4')">4</button>
+                <button class="numero" onclick="adicionar('5')">5</button>
+                <button class="numero" onclick="adicionar('6')">6</button>
+                <button class="operador" onclick="adicionar('*')">×</button>
+
+                <button class="numero" onclick="adicionar('1')">1</button>
+                <button class="numero" onclick="adicionar('2')">2</button>
+                <button class="numero" onclick="adicionar('3')">3</button>
+                <button class="operador" onclick="adicionar('-')">−</button>
+
+                <button class="numero" onclick="adicionar('0')">0</button>
+                <button class="numero" onclick="adicionar('.')">.</button>
+                <button class="numero" onclick="apagar()">←</button>
+                <button class="operador" onclick="adicionar('+')">+</button>
+
+                <button class="limpar" onclick="limpar()">C</button>
+                <button class="igual" onclick="calcular()">=</button>
             </div>
         </div>
-        <div id="body-calculadora">
-            <div class="pedido">
-
-                <!-- área de pedido -->
-
-                <div class="texto">
-                    <h1>FAÇA SEU<br>PEDIDO!</h1>
-
-                    <p>
-                        Caso queira saber o breve valor,<br>
-                        utilize a calculadora.
-                    </p>
-
-                    <!-- link direto para uma mensagem no whatsapp, possuindo um modelo de mensagem onde espaços vazios serão preenchidos pelo cliente -->
-
-                    <a href="https://wa.link/kwxkte" target="_blank" class="botao">Abrir WhatsApp</a>
-                </div>
-
-                <!-- calculadora funcional -->
-
-                <div class="calculadora">
-                    <input type="text" id="display" readonly>
-
-                    <div class="botoes">
-                        <button class="numero" onclick="adicionar('7')">7</button>
-                        <button class="numero" onclick="adicionar('8')">8</button>
-                        <button class="numero" onclick="adicionar('9')">9</button>
-                        <button class="operador" onclick="adicionar('/')">÷</button>
-
-                        <button class="numero" onclick="adicionar('4')">4</button>
-                        <button class="numero" onclick="adicionar('5')">5</button>
-                        <button class="numero" onclick="adicionar('6')">6</button>
-                        <button class="operador" onclick="adicionar('*')">×</button>
-
-                        <button class="numero" onclick="adicionar('1')">1</button>
-                        <button class="numero" onclick="adicionar('2')">2</button>
-                        <button class="numero" onclick="adicionar('3')">3</button>
-                        <button class="operador" onclick="adicionar('-')">−</button>
-
-                        <button class="numero" onclick="adicionar('0')">0</button>
-                        <button class="numero" onclick="adicionar('.')">.</button>
-                        <button class="numero" onclick="apagar()">←</button>
-                        <button class="operador" onclick="adicionar('+')">+</button>
-
-                        <button class="limpar" onclick="limpar()">C</button>
-                        <button class="igual" onclick="calcular()">=</button>
-                    </div>
-                </div>
-            </div>
-    </section>
-
+    </div>
 
     <!-- footer com links que levam até o começo da página -->
 
