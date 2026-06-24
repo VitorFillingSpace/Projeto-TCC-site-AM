@@ -1,0 +1,628 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* reset básico */
+
+/* alterações feitas no nav */
+header img {
+  width: 20vh;
+  height: auto;
+}
+.nav-item {
+  text-decoration: none;
+  background-color: #f06292;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+#nav-rosa {
+  background-color: #88bce0;
+}
+
+/* alterações feitas no carrossel hero section (bootstrap) */
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+.carousel-item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 60px;
+}
+.carousel-item h5, .carousel p {
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-shadow: #010101 2px 2px 5px;
+  font-weight: bold;
+}
+
+/* área de explore/peça e receba */
+
+.explore {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+#tabela-explore {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0% auto;
+  margin: 10vh auto;
+}
+.card-explore-rosa,
+.card-explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #88bce0;
+  margin: 20px;
+  height: fit-content;
+  max-width: 350px;
+  min-width: 280px;
+  color: #fff;
+  font-weight: bold;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+#card-explore-rosa {
+  background-color: #f06292;
+}
+.horario-local {
+  display: flex;
+  align-items: center;
+  color: #f06292;
+  font-weight: bolder;
+}
+
+#local-azul {
+  display: flex;
+  align-items: center;
+  color: #88c8f3;
+  font-weight: bolder;
+}
+#horario-local img {
+  width: 100px;
+  height: 1px;
+}
+
+/* customização menu */
+
+.titulo {
+  text-align: center;
+  color: #77afef;
+  margin: 30px;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.menu {
+  display: flex; /*ativa o flexbox*/
+  flex-wrap: wrap; /*ele quebra a linha, quando não tem espaço suficiente*/
+  justify-content: center; /* alinha os itens no eixo principal*/
+  align-items: stretch; /*deixa os itens com a mesma altura, "esticado" como tamnho do container*/
+  gap: 30px; /*espaçamento de um para o outro*/
+  margin-bottom: 30vh;
+}
+
+.card-menu {
+  width: 250px;
+  background-color: bisque;
+  border-radius: 10px; /*arredondar as bordas*/
+  padding: 20px;
+  margin: 35px;
+  display: flex; /*ativa o flexbox*/
+  flex-direction: column; /*ativa o comportamneto da coluna*/
+  justify-content: space-between; /*alinhar os itens no eixo principal*/
+  transition: 0.3s;
+  box-shadow: 0.3s;
+  background-color: #ee82a2;
+}
+
+.card-menu:hover {
+  transform: translateY(
+    -20px
+  ); /*mover (deslocar) um elemento verticalmente (para cima ou para baixo) em relação à sua posição original */
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+#marmita {
+  background-color: #77afef;
+}
+
+.card-menu img {
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.card-menu a {
+  text-decoration: none;
+}
+.card-menu h3 {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.span {
+  display: flex;
+  gap: 5px;
+}
+
+span {
+  display: flex; /* deixar os itens lado a lado*/
+  justify-content: center;
+  text-decoration: none; /*ele tirar a decoração do meu texto*/
+  margin: 15px;
+  border-radius: 10px;
+  background-color: #f6c3d2;
+  padding: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.combos {
+  display: flex;
+  flex-direction: column;
+  background-color: #ee82a2;
+  margin: 20px;
+}
+
+.menu #marmitas {
+  background-color: #77afef;
+}
+
+#marmitas span {
+  background-color: #bfd1ee;
+}
+
+/* área de criação dos carrosséis de salgados-marmitas-caldos */
+
+.carrossel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  background-color: #f06292;
+  text-align: center;
+  color: #fff;
+}
+.carrossel-wrapper-azul {
+  overflow: hidden;
+  width: 100%;
+  background-color: #88c8f3;
+  text-align: center;
+  color: #fff;
+}
+#carrossel-container-azul {
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  padding: 25px;
+  gap: 25px;
+  background-color: #88c8f3;
+  animation: scrollInfinito 14s linear infinite;
+}
+
+/* animação ""infinita"" para os 3 carrosséis utilizando apenas css*/
+
+.carrossel-container {
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  padding: 25px;
+  gap: 25px;
+  background-color: #f06292;
+  animation: scrollInfinito 14s linear infinite;
+}
+.card-container {
+  position: relative;
+  background-color: #fff;
+  width: 250px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.card-container img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.preco {
+  background: white;
+  color: rgb(91, 91, 91);
+  text-align: center;
+  font-weight: bold;
+}
+/*tatica pra esconder o texto*/
+
+.descricao {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding: 20px;
+  transition: bottom 0.5s ease;
+  background-color: #fff;
+  opacity: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-container:hover .descricao {
+  bottom: 0;
+}
+@keyframes scrollInfinito {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*alterações da área de combos de salgados */
+
+.combos-salgados {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 20vh auto auto auto;
+}
+.combo-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+  color: #f06292;
+  font-weight: bold;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.card-combo-intro {
+  background-color: #f06292;
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  min-width: 200px;
+  flex: 1;
+  text-align: center;
+}
+.descricao-combo {
+  background-color: #ffd5e5;
+  text-align: center;
+  flex: 2;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* customização de seção de monte sua marmitas */
+
+#secao-marmitas {
+  padding: 40px 20px;
+}
+.montar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.card-montar {
+  background-color: #92c5ff;
+  padding: 20px;
+  background-color: #fafafa;
+  border-color: #88bce0;
+  border-radius: 15px;
+  color: #92c5ff;
+  border: 15px solid;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  min-height: 320px;
+  text-align: center;
+}
+#monte-sua-marmita {
+  margin: 20px;
+  color: #92c5ff;
+  font-weight: bolder;
+  text-align: center;
+}
+.montar ul {
+  background-color: #fafafa;
+  list-style: none;
+  text-align: center;
+}
+.card-montar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* área de alterações de combos de caldo - acompanhamento e extras */
+
+.combos-caldo {
+  display: flex;
+  margin: 20px;
+  justify-content: space-evenly;
+  margin: 20vh 0;
+}
+.combo-card-caldo h2 {
+  background-color: #f06292;
+  padding: 8px;
+  color: #fff;
+  border-radius: 8px;
+}
+.combo-card-caldo {
+  width: fit-content;
+  background-color: #ffd5e5;
+  color: #c26189;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* carrinhos estratégicos */
+
+.carrinho {
+  display: block;
+  width: 80px;
+  margin: 10vh auto 20vh auto;
+}
+#ultimo-carrinho {
+  margin: 0;
+}
+.carrinho:hover {
+  transform: scale(1.1);
+}
+
+/* tentativa de fazer o site ficar responsivo em diferentes telas😒🤡 */
+
+@media (max-width: 780px) {
+  .combos-caldo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 570px) {
+  header {
+    font-size: 15px;
+  }
+}
+
+/* customização da calculadora e da área de faça seu pedido */
+
+#body-calculadora {
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.pedido {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.texto {
+  text-align: center;
+}
+
+.texto h1 {
+  color: #75a7eb;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  color: #75a7eb;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.botao {
+  text-decoration: none;
+  background: #75a7eb;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.calculadora {
+  background: #f3bfd2;
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background: #e77fa8;
+  color: white;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.numero,
+.operador,
+.limpar,
+.igual {
+  border: none;
+  border-radius: 12px;
+  height: 45px;
+  background: #e77fa8;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.calculadora button:hover {
+  transform: scale(1.05);
+}
+
+.operador {
+  background: white;
+  color: #e77fa8;
+  font-weight: bold;
+}
+
+.limpar {
+  grid-column: span 2;
+  background: #ff7c9f;
+}
+
+.igual {
+  grid-column: span 2;
+  background: white;
+  color: #e77fa8;
+  font-weight: bold;
+}
+
+/* customizaçao do footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffd5e5;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 30px;
+  justify-content: space-between;
+  color: #c26189;
+  font-weight: bolder;
+}
+.footer-nav a {
+  text-decoration: none;
+  color: #c26189;
+}
+footer img {
+  height: 200px;
+  margin: 0;
+}
+
+/* tentativa de fazer o site ficar responsivo em diferentes telas😒🤡 */
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 200px;
+  }
+  .carousel-item h5 {
+    font-size: 45px;
+  }
+  .carousel-item p {
+    font-size: 20px;
+  }
+  .carousel-caption {
+    padding-bottom: 10px;
+  }
+  .pedido {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .texto {
+    order: 1;
+  }
+
+  .calculadora {
+    order: 2;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .texto h1 {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .texto p {
+    font-size: 18px;
+  }
+
+  .botao {
+    display: inline-block;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .pedido {
+    gap: 30px;
+  }
+
+  .texto h1 {
+    font-size: 38px;
+  }
+
+  .texto p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .calculadora {
+    max-width: 280px;
+    padding: 15px;
+  }
+
+  button {
+    height: 42px;
+    font-size: 18px;
+  }
+
+  #display {
+    height: 45px;
+    font-size: 20px;
+  }
+}
