@@ -20,81 +20,26 @@
     <!-- nav com imagem copiado do bootstrap (se altera com tamanhos de tela diferentes). links estratégicos para a navegação completa da página-->
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="header-inicial">
-            <div class="container-fluid">
-                <img src="imagens/fav-icon.png" alt="Bootstrap" width="30" height="24">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link-active" aria-current="page" href="#body-calculadora">FAÇA SEU PEDIDO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-active" aria-current="page" href="#area-menu">MENU</a>
-                        </li>
-                        <li class="nav-item" id="nav-rosa">
-                            <a class="nav-link-active" aria-current="page" href="sobre.html">SOBRE</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
+        <div>
+            <a href="./#body-calculadora">
+                <img src="./imagens/Carrinho rosa.png" alt="">
+            </a>
+            <img src="./imagens/logo-png.png" alt="">
+        </div>
+
+        <nav>
+            <a href="./sobre.html"> SOBRE </a>
+
+            <a href="./#area-menu"> INFOS </a>
+
+            <a href="./pedido.html"> FORMULÁRIO </a>
         </nav>
     </header>
 
-    <!-- carrossel hero-section bootstrap com links para cada carrossel correspondente de produtos-->
+    <!-- carrossel hero-section-->
 
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a class="carousel-link" href="#carrossel-salgados">
-                    <img src="imagens/hero-section/carrosel salgados.jpeg" class="d-block w-100" alt="Salgados">
-                    <div class="carousel-caption d-md-block">
-                        <h5>SALGADOS</h5>
-                        <p>Experimente salgados caseiros deliciosos!</p>
-                    </div>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a class="caroulsel-link" href="#carrossel-marmitas">
-                    <img src="imagens/hero-section/carrosel marmita.jpeg" class="d-block w-100" alt="Marmitas">
-                    <div class="carousel-caption d-md-block">
-                        <h5>MARMITAS</h5>
-                        <p>Compre marmitas e conheça a minha culinária!</p>
-                    </div>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a class="caroulsel-link" href="#carrossel-caldos">
-                    <img src="imagens/hero-section/carrossel caldo.jpeg" class="d-block w-100" alt="Caldos">
-                    <div class="carousel-caption d-md-block">
-                        <h5>CALDOS</h5>
-                        <p>Prove caldos regionais incríveis!</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-        </button>
-    </div>
+    <img src="imagens/hero-section/hero-section ste-2.jpeg" id="hero-section" alt="">
 
     <!--Área de explore e informações-->
     <article class="explore">
@@ -664,7 +609,7 @@
 
                 <!-- link direto para uma mensagem no whatsapp, possuindo um modelo de mensagem onde espaços vazios serão preenchidos pelo cliente -->
 
-                <a href="https://wa.link/kwxkte" target="_blank" class="botao">Abrir WhatsApp</a>
+                <a href="./pedido.html" target="_blank" class="botao">CLIQUE E FAÇA SEU PEDIDO</a>
             </div>
 
         </div>
@@ -719,6 +664,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- link de ref para o VLibras -->
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 </body>
 
 </html>

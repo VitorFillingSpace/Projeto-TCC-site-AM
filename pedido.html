@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAÇA SEU PEDIDO AM</title>
+    <link rel="shortcut icon" href="./imagens/logo-png.png" type="image/x-icon"> <!-- ICON NA GUIA-->
+    <link rel="stylesheet" href="pedido.css">
+
+</head>
+
+<body>
+
+
+    <main>
+
+        <div class="container">
+
+            <h1>Pedido</h1>
+
+            <form id="pedidoForm">
+
+                <section>
+
+                    <h2>Dados do Cliente</h2>
+
+                    <input type="text" id="nome" placeholder="Nome" required>
+
+                    <input type="tel" id="telefone" placeholder="Telefone" required>
+
+                </section>
+
+                <section>
+
+                    <h2>Entrega</h2>
+
+                    <div class="radio-group">
+
+                        <label><input type="radio" name="entrega" value="Entrega" checked> Entrega</label>
+
+                        <label><input type="radio" name="entrega" value="Retirada"> Retirada</label>
+
+                    </div>
+
+                    <div id="enderecoContainer">
+
+                        <input type="text" id="endereco" placeholder="Endereço">
+
+                    </div>
+
+                    <div id="retiradaContainer" style="display:none;">
+
+                        <input type="date" id="data">
+
+                        <input type="time" id="hora">
+
+                    </div>
+
+                </section>
+
+                <section>
+
+                    <h2 id="titulo-salgado">Salgados</h2>
+
+                    <h2>Combos de salgados</h2>
+
+                    <div class="produto" data-produto="Combo #1">Combo #1 - Salgados pequenos</div>
+
+                    <div class="produto" data-produto="Combo#2">Combo#2 - Salgados grandes</div>
+
+                    <div class="produto" data-produto="Combo #3 - Personalizado">Combo #3 - Personalizado</div>
+
+
+                </section>
+
+                <section>
+
+                    <h2>Personalizado</h2>
+
+                    <div class="produtos">
+
+                        <div class="produto" data-produto="Coxinha">Coxinha</div>
+
+                        <div class="produto" data-produto="Kibe">Kibe</div>
+
+                        <div class="produto" data-produto="Pastel">Risole</div>
+
+                        <div class="produto" data-produto="Enroladinho">Enroladinho de salsicha</div>
+
+                        <div class="produto" data-produto="Croquete">Croquete</div>
+
+                        <div class="produto" data-produto="Bolinho de carne">Bolinho de carne</div>
+
+                        <div class="produto" data-produto="Bolinho de queijo">Bolinho de queijo</div>
+
+                    </div>
+
+                </section>
+
+
+                <section>
+
+                    <h2>Marmitas</h2>
+
+                    <div class="produtos">
+
+                        <div class="produto" data-produto="Feijoada">Feijoada</div>
+
+                        <div class="produto" data-produto="Picadinho de carne">Picadinho de carne</div>
+
+                        <div class="produto" data-produto="Galinhada">Galinhada</div>
+
+                        <div class="produto" data-produto="Sarapatel">Sarapatel</div>
+
+                        <div class="produto" data-produto="Baião de dois">Baião de dois</div>
+
+
+                    </div>
+
+                </section>
+
+                <section>
+
+                    <h2>Caldos</h2>
+
+                    <div class="produtos">
+
+                        <div class="produto" data-produto="Caldo Verde">Caldo verde</div>
+
+                        <div class="produto" data-produto="Caldo de Mocotó">Caldo de Mocotó</div>
+
+                        <div class="produto" data-produto="Caldo de Kenga">Caldo de kenga</div>
+
+                        <div class="produto" data-produto="Caldo de vatapá">Caldo de vatapá</div>
+
+
+                    </div>
+
+                </section>
+
+                <section>
+
+                    <h2>Carrinho</h2>
+
+                    <div id="carrinho">Nenhum item selecionado</div>
+
+                </section>
+
+                <section>
+
+                    <h2>Observação</h2>
+
+                    <textarea id="observacao" placeholder="Observações do pedido"></textarea>
+
+                </section>
+
+                <button type="submit">Finalizar Pedido</button>
+
+            </form>
+
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+
+
+
+        <!-- link de ref para o VLibras -->
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+    <!-- footer com links que levam até o começo da página -->
+
+    <footer>
+        <img src="imagens/logo-png.png" alt="LOGO AM">
+        <div class="footer-nav">
+            <a href="index.html">Início</a>
+            <a href="#area-menu">Menu</a>
+            <a href="#body-calculadora">Faça seu pedido</a>
+            <p>Serviço — Cozinheira</p>
+            <p>©Todos os direitos reservados à Antônia Maria</p>
+        </div>
+    </footer>
+
+</html>

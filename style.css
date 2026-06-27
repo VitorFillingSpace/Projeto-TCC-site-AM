@@ -7,43 +7,30 @@
 /* reset básico */
 
 /* alterações feitas no nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 header img {
-  width: 20vh;
+  width: 80px;
   height: auto;
+  margin: 10px 0;
 }
-.nav-item {
+nav a {
   text-decoration: none;
-  background-color: #f06292;
-  padding: 10px;
-  margin: 15px;
-  border-radius: 10px;
-  font-weight: bold;
-}
-.nav-item a {
+  background-color: #f6becf;
   color: #fff;
-  text-decoration: none;
-}
-#nav-rosa {
-  background-color: #88bce0;
+  padding: 18px;
+  border-radius: 15px;
+  margin: 10px;
+  font-weight: bolder;
 }
 
 /* alterações feitas no carrossel hero section (bootstrap) */
 
-.carousel-item img {
-  height: 500px;
-  object-fit: cover;
-}
-.carousel-item a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 60px;
-}
-.carousel-item h5, .carousel p {
-  font-size: 60px;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
-  text-shadow: #010101 2px 2px 5px;
-  font-weight: bold;
+#hero-section{
+  width: 100%;
 }
 
 /* área de explore/peça e receba */
@@ -81,7 +68,7 @@ header img {
   background-color: #f06292;
 }
 
-.container-horario{
+.container-horario {
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -119,7 +106,7 @@ header img {
 
 /* customização menu */
 
-#container-cards-menu{
+#container-cards-menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -234,7 +221,7 @@ header img {
   background-color: #bfd1ee;
 }
 
-#area-menu{
+#area-menu {
   margin-bottom: 100px;
 }
 
@@ -315,7 +302,8 @@ header img {
 .card-container:hover .descricao {
   bottom: 0;
 }
-.carrossel-container:hover, #carrossel-container-azul:hover{
+.carrossel-container:hover,
+#carrossel-container-azul:hover {
   animation-play-state: paused;
 }
 @keyframes scrollInfinito {
