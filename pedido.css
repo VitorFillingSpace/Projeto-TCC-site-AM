@@ -16,7 +16,7 @@ nav{
 }
 .nav-item {
   text-decoration: none;
-  background-color: #fa79a4;
+  background-color: #e9b2c2;
   padding: 10px;
   margin: 15px;
   border-radius: 10px;
@@ -41,7 +41,7 @@ main {
 .container {
   width: 100%;
   max-width: 850px;
-  background: #f5bfd6;
+  background: #e9b2c2;
   padding: 30px;
   border-radius: 30px;
 }
@@ -56,7 +56,7 @@ main {
 h1 {
   text-align: center;
   color: #ffffff;
-  background: #dc78a6;
+  background: #e9b2c2;
   padding: 18px;
   border-radius: 18px;
   margin-bottom: 30px;
@@ -69,7 +69,7 @@ section {
 }
 
 h2 {
-  color: #b54d80;
+  color: #ad7283;
   margin-bottom: 15px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -98,7 +98,7 @@ textarea {
 }
 
 .radio-group label {
-  background: #dc78a6;
+  background: #ad7283;
   color: white;
   padding: 12px 18px;
   border-radius: 15px;
@@ -126,7 +126,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #dc78a6;
+  background: #ad7283;
   color: white;
   text-align: center;
   padding: 18px 10px;
@@ -146,8 +146,8 @@ textarea {
 
 .produto.selecionado {
   background: white;
-  color: #dc78a6;
-  border-color: #dc78a6;
+  color: #ad7283;
+  border-color: #e9b2c2;
 }
 
 /* Carrinho */
@@ -165,7 +165,7 @@ textarea {
 button {
   width: 100%;
   padding: 18px;
-  background: #ff6f9d;
+  background: #e9b2c2;
   color: white;
   border: none;
   border-radius: 20px;
@@ -176,7 +176,7 @@ button {
 
 button:hover {
   transform: scale(1.02);
-  background: #f65f92;
+  background: #e9b2c2;
 }
 
 /* customizaçao do footer */

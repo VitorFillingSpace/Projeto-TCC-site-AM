@@ -20,11 +20,11 @@
 }
 
 .container-fluid{
-    background-color: #F1A1BA;
+    background-color: #e9b2c2;
     padding: 4vh;
 }
 header h2{
-    background-color: #d36383;
+    background-color: #e9b2c2;
     color: #fff;
     padding: 8px;
     border-radius: 8px;
@@ -35,7 +35,7 @@ header img {
 }
 .nav-item {
   text-decoration: none;
-  background-color: #f06292;
+  background-color: #e9b2c2;
   padding: 10px;
   margin: 15px;
   border-radius: 10px;
@@ -49,10 +49,33 @@ header img {
   background-color: #88bce0;
 }
 
+/*nav*/
+
+header{
+    background-color: #e9b2c2;
+    text-decoration: none;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+nav{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
 /*tela 1 foto e frase*/
 
 #antonia-maria-container{ 
     display: flex;
+    flex-direction: row;
 
     font-family: 'Cinzel';
     flex-wrap: wrap;
@@ -60,19 +83,15 @@ header img {
 
 .nome-antonia{ 
     text-align: center;
-    margin-top: 230px;
+    margin-top: 150px;
     margin-left: 120px;
     margin-right: 50px;
     font-size: 50px;
-    color: #f1a1ba;
+    color: #e9b2c2;
 }
 
 .frase-antonia{
     color: #88bce0;
-}
-
-.foto-antonia{
-    text-align: right;
 }
 
 /*caixas tela 2 e 3*/
@@ -90,7 +109,7 @@ header img {
     margin-top: 300px;
     margin-left: 25%;
     margin-right: 25%;
-    background-color: #cf6080;
+    background-color: #e9b2c2;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.448);
     transition: 0.3s;
@@ -130,7 +149,7 @@ header img {
     border-radius: 10px;
 }
 .depoimento :hover{
-    background-color: #d36383;
+    background-color: #e9b2c2;
     transform: translateY(20px);
     border-radius: 10px;
 }
@@ -188,7 +207,7 @@ header img {
     justify-content: center;
     min-height: 180px;
     justify-content: center;
-    background-color: #cf6080;
+    background-color: #e9b2c2;
     color: white;
     padding: 25px 30px;
     border-radius: 12px;
@@ -204,7 +223,7 @@ header img {
 
 .valor-card-dois{
     min-height: 180px;
-    background-color: #cf6080;
+    background-color: #e9b2c2;
     color: white;
     padding: 25px 30px;
     border-radius: 12px;
@@ -278,7 +297,7 @@ header img {
 }
 
 .curiosidades h2 {
-    color: #d36383;
+    color: #df8da4;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 35px;
@@ -309,7 +328,7 @@ header img {
 }
 
 .rosa .texto {
-    background-color: #F1A1BA;
+    background-color:#e9b2c2;
 }
 
 .texto h3 {
@@ -322,11 +341,11 @@ header img {
 }
 
 .h3-rosa{
-    color: #d36383;
+    color: #d1738d;
 }
 
 .p-rosa{
-    color: #d36383;
+    color: #cc748d;
 }
 
 .p-azul{
@@ -342,7 +361,7 @@ header img {
 
 /* tentativa de responsividade em diferentes telas */
 
-@media (max-width: 768px) {
+@media (max-width: 68px) {
 
     #body-curiosidades{
         padding: 20px 15px;
@@ -438,7 +457,7 @@ header img {
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: #ffd5e5;
+  background-color:#e9b2c2;
 }
 .footer-nav {
   display: flex;
@@ -446,12 +465,12 @@ footer {
   align-items: end;
   padding: 30px;
   justify-content: space-between;
-  color: #c26189;
+  color: #ce8196;
   font-weight: bolder;
 }
 .footer-nav a {
   text-decoration: none;
-  color: #c26189;
+  color: #c47d91;
 }
 footer img {
   height: 200px;
